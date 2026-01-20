@@ -112,9 +112,11 @@ View, manage, and delete uploaded documents directly from the interface.
 
 ## Environment Variables
 
+```env
 DB_URI=mongodb://localhost:27017
 DB_NAME=rag_chatbot
 GEMINI_API_KEY=your_google_gemini_api_key
 API_URL=http://localhost:8000
 RETRIEVER_K=5
 LLM_TEMPERATURE=0.7
+```
