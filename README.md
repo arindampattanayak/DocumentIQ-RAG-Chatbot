@@ -24,7 +24,7 @@ The application follows a modern, production-style architecture, with a FastAPI 
 
 🔐 Secure API key and configuration management
 
-## Tech Stack
+# Tech Stack
 ## Frontend
 
 ### Streamlit
@@ -87,17 +87,30 @@ Request/response validation
 Frontend ↔ backend communication
 
 
-### Features
+# Features
 
-Document Upload: Users can upload PDF, DOCX, or HTML files via the Streamlit sidebar, which are then processed and indexed.
-Document Indexing: Uploaded documents are split into chunks, embedded using all-MiniLM-L6-v2, and stored in ChromaDB for retrieval.
-Chat Interface: A conversational interface where users can ask questions about uploaded documents and receive detailed responses.
-Retrieval-Augmented Generation (RAG): Combines document retrieval from ChromaDB with response generation via Gemini-1.5-Flash.
-Chat History: Persists and displays the conversation history for each session, stored in MongoDB.
-Model Selection: Allows users to choose the language model (currently Gemini-1.5-Flash) for response generation.
-Document Management: View a list of uploaded documents and delete them as needed through the sidebar.
+## Document Upload
+Upload PDF, DOCX, or HTML documents via the interface for processing and indexing.
 
-### Environment Variables
+## Document Indexing
+Documents are split into semantic chunks, embedded using all-MiniLM-L6-v2, and stored in ChromaDB for efficient retrieval.
+
+## Conversational Chat Interface
+Interact with uploaded documents through a chat-based interface to ask questions and receive detailed, context-aware responses.
+
+## Retrieval-Augmented Generation (RAG)
+Combines semantic document retrieval from ChromaDB with response generation using Google Gemini (LLM).
+
+## Chat History Persistence
+Maintains session-based conversation history using MongoDB, enabling multi-turn contextual interactions.
+
+## Model Selection
+Supports configurable language model selection (currently Gemini-1.5-Flash) for response generation.
+
+## Document Management
+View, manage, and delete uploaded documents directly from the interface.
+
+# Environment Variables
 
 DB_URI=mongodb://localhost:27017
 DB_NAME=rag_chatbot
