@@ -24,66 +24,66 @@ The application follows a modern, production-style architecture, with a FastAPI 
 
 🔐 Secure API key and configuration management
 
-### Tech Stack
+## Tech Stack
 ## Frontend
 
-# Streamlit
+### Streamlit
 Interactive web UI for chat, document upload, and management.
 
 ## Backend
 
-# FastAPI
+### FastAPI
 REST API for handling document ingestion, indexing, chat queries, and database operations.
 
-# Uvicorn
+### Uvicorn
 ASGI server for running FastAPI.
 
 ## Databases
 
-# MongoDB
+### MongoDB
 Stores:
 
 Chat conversation history (session-based)
 
 Uploaded document metadata (filename, timestamps)
 
-# ChromaDB
+### ChromaDB
 Vector database used for semantic similarity search over document embeddings.
 
 ## AI & NLP
 
-# LangChain
+### LangChain
 Orchestrates the RAG pipeline, retrieval chains, prompt templates, and conversational context.
 
-# Google Generative AI – Gemini-1.5-Flash
+### Google Generative AI – Gemini-1.5-Flash
 Large Language Model used for answer generation.
 
-# HuggingFace all-MiniLM-L6-v2
+### HuggingFace all-MiniLM-L6-v2
 Embedding model used to convert document chunks and user queries into dense vectors.
 
 ## Document Processing
 
-# PyPDFLoader 
+### PyPDFLoader 
 PDF text extraction
 
-# Docx2txtLoader 
+### Docx2txtLoader 
 DOCX file processing
 
-# UnstructuredHTMLLoader 
+### UnstructuredHTMLLoader 
 HTML content parsing
 
 ## Utilities
 
-# SpeechRecognition  
+### SpeechRecognition  
 Voice-to-text input
 
-# Python-Dotenv 
+### Python-Dotenv 
 Environment variable management
 
-# Pydantic 
+### Pydantic 
 Request/response validation
 
-# Requests 
+### Requests 
 Frontend ↔ backend communication
 
 
