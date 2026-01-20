@@ -1,4 +1,4 @@
-# DocumentIQ : LangChain RAG Chatbot – Document Intelligence System
+# DocumentIQ – LangChain-Powered RAG Document Intelligence Platform
 
 ## Project Overview
 The LangChain RAG Chatbot is an AI-powered, document-aware conversational system built using Retrieval-Augmented Generation (RAG).
