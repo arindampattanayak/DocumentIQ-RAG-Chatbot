@@ -50,7 +50,7 @@ Uploaded document metadata (filename, timestamps)
 ### ChromaDB
 Vector database used for semantic similarity search over document embeddings.
 
-## AI & NLP
+## AI & LLM
 
 ### LangChain
 Orchestrates the RAG pipeline, retrieval chains, prompt templates, and conversational context.
