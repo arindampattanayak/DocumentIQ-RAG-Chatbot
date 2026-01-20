@@ -89,28 +89,28 @@ Frontend ↔ backend communication
 
 ## Features
 
-## Document Upload
+### Document Upload
 Upload PDF, DOCX, or HTML documents via the interface for processing and indexing.
 
-## Document Indexing
+### Document Indexing
 Documents are split into semantic chunks, embedded using all-MiniLM-L6-v2, and stored in ChromaDB for efficient retrieval.
 
-## Conversational Chat Interface
+### Conversational Chat Interface
 Interact with uploaded documents through a chat-based interface to ask questions and receive detailed, context-aware responses.
 
-## Retrieval-Augmented Generation (RAG)
+### Retrieval-Augmented Generation (RAG)
 Combines semantic document retrieval from ChromaDB with response generation using Google Gemini (LLM).
 
-## Chat History Persistence
+### Chat History Persistence
 Maintains session-based conversation history using MongoDB, enabling multi-turn contextual interactions.
 
-## Model Selection
+### Model Selection
 Supports configurable language model selection (currently Gemini-1.5-Flash) for response generation.
 
-## Document Management
+### Document Management
 View, manage, and delete uploaded documents directly from the interface.
 
-## Environment Variables
+### Environment Variables
 
 ```env
 DB_URI=mongodb://localhost:27017
