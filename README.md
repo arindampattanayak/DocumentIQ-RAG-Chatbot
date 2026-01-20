@@ -1,6 +1,6 @@
-### DocumentIQ : LangChain RAG Chatbot – Document Intelligence System
+# DocumentIQ : LangChain RAG Chatbot – Document Intelligence System
 
-### Project Overview
+## Project Overview
 The LangChain RAG Chatbot is an AI-powered, document-aware conversational system built using Retrieval-Augmented Generation (RAG).
 It allows users to upload documents (PDF, DOCX, HTML), index their content using vector embeddings, and interact with a chatbot that provides accurate, context-aware, and document-grounded responses.
 
@@ -8,7 +8,7 @@ Instead of relying solely on a language model’s internal knowledge, the chatbo
 
 The application follows a modern, production-style architecture, with a FastAPI backend, Streamlit frontend, vector database for semantic retrieval, and persistent storage for chat history.
 
-### Key Capabilities
+## Key Capabilities
 
 📄 Upload and index documents in multiple formats
 
@@ -24,7 +24,7 @@ The application follows a modern, production-style architecture, with a FastAPI 
 
 🔐 Secure API key and configuration management
 
-# Tech Stack
+## Tech Stack
 ## Frontend
 
 ### Streamlit
@@ -87,7 +87,7 @@ Request/response validation
 Frontend ↔ backend communication
 
 
-# Features
+## Features
 
 ## Document Upload
 Upload PDF, DOCX, or HTML documents via the interface for processing and indexing.
@@ -110,7 +110,7 @@ Supports configurable language model selection (currently Gemini-1.5-Flash) for 
 ## Document Management
 View, manage, and delete uploaded documents directly from the interface.
 
-# Environment Variables
+## Environment Variables
 
 DB_URI=mongodb://localhost:27017
 DB_NAME=rag_chatbot
