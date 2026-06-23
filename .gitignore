@@ -1,0 +1,66 @@
+# ===================================
+# Python
+# ===================================
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ===================================
+# Environment Variables
+# ===================================
+.env
+backend/.env
+frontend/.env
+# Ignore nested gitignore files
+backend/.gitignore
+frontend/.gitignore
+# ===================================
+# Logs
+# ===================================
+*.log
+app.log
+backend/app.log
+
+# ===================================
+# ChromaDB & Uploaded Documents
+# ===================================
+backend/data/
+backend/documents/
+
+# ===================================
+# React / Vite
+# ===================================
+frontend/node_modules/
+frontend/dist/
+
+# ===================================
+# Old Streamlit Version
+# ===================================
+frontend0/
+
+# ===================================
+# IDE Files
+# ===================================
+.vscode/
+.idea/
+
+# ===================================
+# OS Files
+# ===================================
+.DS_Store
+Thumbs.db
+
+# ===================================
+# Optional Debug Files
+# ===================================
+
+
+# Uncomment if only local testing
+# backend/src/test_gemini.py
+
+# ===================================
+# Optional Deployment Config
+# ===================================
+render.yaml
