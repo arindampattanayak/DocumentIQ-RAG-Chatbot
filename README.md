@@ -24,15 +24,12 @@ The application combines semantic document retrieval using ChromaDB with Google'
 
 - 📄 Modern React-based user interface 
 
-- Delete and manage uploaded documents 
+- 🗑️ Delete and manage uploaded documents 
 
-- 🗑️� 
+- ⚙️ Configurable retrieval and generation parameters 
 
-- ⚙️� Configurable retrieval and generation parameters 
 
-**System Architecture** 🏗️� 
-
-## **Tech Stack** 🛠️� 
+## **Tech Stack** 🛠️
 
 **Category Technology** Frontend React.js Backend FastAPI Database MongoDB Vector Store ChromaDB LLM Gemini 2.5 Flash Embedding Model all-MiniLM-L6-v2 Framework LangChain Language Python 3.11.11 
 
