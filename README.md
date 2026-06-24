@@ -1,89 +1,49 @@
-## 📚 **DocumentIQ-RAG-Chatbot** 
+# **DocumentIQ-RAG-Chatbot** 
 
-## **📖 Overview** 
+## **Overview** 
 
 DocumentIQ-RAG-Chatbot is an AI-powered Retrieval-Augmented Generation (RAG) application that enables users to upload documents, build a searchable knowledge base, and interact with their documents through natural language conversations. 
 
 The application combines semantic document retrieval using ChromaDB with Google's Gemini 2.5 Flash model to generate accurate, context-aware responses. Users can upload PDF, DOCX, and HTML files, which are automatically processed, embedded, and indexed for efficient information retrieval. 
 
-## **📖 Features** 
+## **Features** 
 
-- 📄 Upload and process PDF, DOCX, and HTML documents 
+-  Upload and process PDF, DOCX, and HTML documents 
 
-- 🔍 Semantic search using vector embeddings 
+-  Semantic search using vector embeddings 
 
-- 📄 Context-aware responses powered by Gemini 2.5 Flash 
+-  Context-aware responses powered by Gemini 2.5 Flash 
 
-- 📄 Retrieval-Augmented Generation (RAG) pipeline using LangChain 
+-  Retrieval-Augmented Generation (RAG) pipeline using LangChain 
 
-- 📄 Persistent chat history stored in MongoDB 
+-  Persistent chat history stored in MongoDB 
 
-- 📚 Document indexing and management 
+-  Document indexing and management 
 
-- ⚡ FastAPI backend for high-performance API handling 
+-  FastAPI backend for high-performance API handling 
 
-- 📄 Modern React-based user interface 
+-  Modern React-based user interface 
 
-- 🗑️ Delete and manage uploaded documents 
+-  Delete and manage uploaded documents 
 
-- ⚙️ Configurable retrieval and generation parameters 
+-  Configurable retrieval and generation parameters 
 
+##  Tech Stack
 
-## **Tech Stack** 🛠️
+| Category | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Frontend** | React.js | Provides a modern and responsive user interface for document management and chatbot interactions. |
+| **Backend** | FastAPI | Handles API requests, authentication, document processing, and communication with the RAG pipeline. |
+| **Database** | MongoDB Atlas | Stores user accounts, authentication data, chat history, session information, and document metadata. |
+| **Vector Store** | ChromaDB | Stores document embeddings and performs semantic similarity searches for relevant context retrieval. |
+| **LLM** | Gemini 2.5 Flash | Generates intelligent, context-aware responses using retrieved document information. |
+| **Embedding Model** | all-MiniLM-L6-v2 | Converts document text into dense vector embeddings for semantic search and retrieval. |
+| **Framework** | LangChain | Orchestrates document loading, chunking, retrieval, prompt engineering, and LLM interactions. |
+| **Document Loaders** | PyPDFLoader, Docx2txtLoader, UnstructuredHTMLLoader | Extracts text and processes content from PDF, DOCX, and HTML files. |
+| **Text Splitter** | RecursiveCharacterTextSplitter | Splits large documents into manageable chunks while preserving contextual information. |
+| **Language** | Python 3.11.11 | Core programming language used for backend development and AI integration. |
 
-**Category Technology** Frontend React.js Backend FastAPI Database MongoDB Vector Store ChromaDB LLM Gemini 2.5 Flash Embedding Model all-MiniLM-L6-v2 Framework LangChain Language Python 3.11.11 
-
-## **📖 Core Components** 
-
-## **📖 Large Language Model** 
-
-## **Gemini 2.5 Flash** 
-
-Used for generating intelligent, context-aware responses based on retrieved document chunks. 
-
-## 🔍 **Embedding Model** 
-
-## **all-MiniLM-L6-v2** 
-
-Generates dense vector embeddings from document text for efficient semantic search and retrieval. 
-
-## **Vector Database** 🗄️� 
-
-## **ChromaDB** 
-
-Stores document embeddings and performs similarity searches to retrieve the most relevant document chunks. 
-
-## **📖 Database** 
-
-## **MongoDB** 
-
-Stores: 
-
-- Chat history 
-
-- Conversation logs 
-
-- Uploaded document metadata 
-
-- Document indexing information 
-
-## 📚 **LangChain Components** 
-
-## **Document Loaders** 
-
-- PyPDFLoader – Extracts text from PDF files 
-
-- Docx2txtLoader – Processes DOCX documents 
-
-- UnstructuredHTMLLoader – Extracts content from HTML files 
-
-## **Text Splitter** 
-
-- RecursiveCharacterTextSplitter 
-
-Splits large documents into manageable chunks while preserving contextual information. 
-
-## **⚙️� How It Works** 
+## **How It Works** 
 
 1. User uploads a document. 
 
@@ -105,7 +65,7 @@ Splits large documents into manageable chunks while preserving contextual inform
 
 10. Chat history and metadata are stored in MongoDB. 
 
-## 📋 **Prerequisites** 
+## **Prerequisites** 
 
 Before running the application, ensure you have: 
 
@@ -117,7 +77,7 @@ Before running the application, ensure you have:
 
 - Google Gemini API Key 
 
-## **📖 Environment Variables** 
+## **Environment Variables** 
 
 Create a .env file inside the **backend** directory and add the following: 
 
@@ -127,113 +87,79 @@ DB_NAME=your_database_name
 
 GEMINI_API_KEY=your_gemini_api_key 
 
-API_URL=http://localhost:8000 FRONTEND_URL=http://localhost:5173 
+GEMINI_MODEL=gemini-2.5-flash
 
 RETRIEVER_K=5 
 
-LLM_TEMPERATURE=0.7 
+LLM_TEMPERATURE=0.7
 
-## **Environment Variable Description** 
+FRONTEND_URL=http://localhost:5173 
 
-**Variable Description** DB_URI MongoDB connection string DB_NAME MongoDB database name GEMINI_API_KEY Google Gemini API key API_URL Backend API URL FRONTEND_URL Frontend application URL RETRIEVER_K Number of document chunks retrieved LLM_TEMPERATURE Controls response creativity 
+SECRET_KEY=your_secret_key
 
-## **📖 Installation** 
+ALGORITHM=HS256
 
-## **1️⃣ Clone the Repository** 
+ACCESS_TOKEN_EXPIRE_MINUTES=1440
+ 
+## **Installation** 
 
+## **1️) Clone the Repository** 
+```bash
 git clone <repository-url> 
-
+```
+```bash
 cd DocumentIQ-RAG-Chatbot 
-
-## **2 Create a Virtual Environment** 
-
+```
+## **2) Create a Virtual Environment** 
+```bash
 python -m venv venv 
+```
+## **3️) Activate the Virtual Environment** 
 
-## **3️⃣ Activate the Virtual Environment** 
-
-## **Linux / macOS** 
-
+### **Linux / macOS** 
+```bash
 source venv/bin/activate 
-
-## **Windows** 
-
+```
+### **Windows** 
+```bash
 venv\Scripts\activate 
-
-## **4️⃣ Install Backend Dependencies** 
-
+```
+## **4️) Install Backend Dependencies** 
+```bash
 pip install -r requirements.txt 
-
-## **5 Install Frontend Dependencies** 
-
+```
+## **5) Install Frontend Dependencies** 
+```bash
 npm install 
-
-## **▶️� Running the Application** 
+```
+## **6) Running the Application** 
 
 ## **Start the Backend** 
 
 Open a terminal: 
-
-source venv/bin/activate 
-
-cd backend 
-
+```bash
+cd backend
+``` 
+```bash
 uvicorn src.main:app --reload 
+```
 
 Backend URL: http://localhost:8000 
 
 ## **Start the Frontend** 
 
-Open a new terminal: 
-
+Open a new terminal:
+```bash
+cd frontend
+``` 
+```bash
 npm run dev 
+```
 
 Frontend URL: http://localhost:5173 
 
-## **📖 Project Structure** 
 
-DocumentIQ-RAG-Chatbot/ 
-
-│ 
-
-├── backend/ 
-
-│   ├── src/ 
-
-│   ├── uploads/ 
-
-│   ├── chroma_db/ 
-
-│   ├── requirements.txt 
-
-│   └── .env 
-
-│ 
-
-├── frontend/ 
-
-│   ├── src/ 
-
-│   ├── public/ 
-
-- │   ├── package.json 
-
-- │   └── vite.config.js 
-
-│ 
-
-├── Images/ 
-
-│   └── RAG.png 
-
-│ 
-
-├── README.md 
-
-│ 
-
-└── venv/ 
-
-## **📖 Example Use Cases** 
+## **Example Use Cases** 
 
 - Research Paper Question Answering 
 
@@ -249,7 +175,7 @@ DocumentIQ-RAG-Chatbot/
 
 
 
-## **📖 Author** 
+## **Author** 
 
 ## **Arindam Pattanayak** 
 
