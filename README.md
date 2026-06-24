@@ -26,7 +26,21 @@ The application combines semantic document retrieval using ChromaDB with Google'
 
 -  Delete and manage uploaded documents 
 
--  Configurable retrieval and generation parameters 
+-  Configurable retrieval and generation parameters
+
+## Demo
+
+### Login Page
+![Login Page](Images/Signin.png)
+
+### Signup Page
+![Signup Page](Images/Signup.png)
+
+### AI Response
+![Signup Page](Images/AI_Response.png)
+
+### Chat History
+![Chat History](Images/Chat_History.png)
 
 ##  Tech Stack
 
