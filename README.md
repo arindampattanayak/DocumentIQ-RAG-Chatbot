@@ -30,16 +30,16 @@ The application combines semantic document retrieval using ChromaDB with Google'
 
 ## Demo
 
-### Login Page
+### 1) Login Page
 ![Login Page](Images/Signin.png)
 
-### Signup Page
+### 2) Signup Page
 ![Signup Page](Images/Signup.png)
 
-### AI Response
+### 3) AI Response
 ![Signup Page](Images/AI_Response.png)
 
-### Chat History
+### 4) Chat History
 ![Chat History](Images/Chat_History.png)
 
 ##  Tech Stack
