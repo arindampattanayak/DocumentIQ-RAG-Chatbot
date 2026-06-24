@@ -50,9 +50,9 @@ export default function Sidebar({
   return (
     <aside className="sidebar">
       <div className="panel">
-        <h2>RAG Voice</h2>
+        <h2>DocumentIQ</h2>
         <p className="muted">
-          {user?.name} · {user?.email}
+          {user?.name}  {user?.email}
         </p>
         <button className="secondary-btn" onClick={onLogout}>
           Logout
